@@ -1,0 +1,53 @@
+/* Reset dasar */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Body */
+body {
+   font-family: "segeo UI", Tahoma, sans-serif;
+   background: linear-gradien(135deg,  #667eea,  #764ba2);
+   min-height: 100vh;
+   padding: 40px;
+   color:  #333;
+}
+
+/* Container utama */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Judul */
+.title {
+    text-align: center;
+    color:  #fff;
+    margin-bottom: 30px;
+    font-size: 36px;
+    letter-spacing: 2px;
+    animation: drop 1s ease-out;
+}
+
+/* Card */
+.card {
+    background:  #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px  rgba(0, 0, 0, 0.25);
+    transition:
+       transform 0.4s ease,
+       box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-8PX) scale(1.02);
+    box-shadow: 0 20px 35px  rgba(0, 0, 0, 0.25);
+}
+
+/* Heading section */
+.card h2 {
+    margin-bottom: 15px;
+}
