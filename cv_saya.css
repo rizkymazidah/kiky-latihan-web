@@ -7,11 +7,12 @@
 
 /* Body */
 body {
-   font-family: "segeo UI", Tahoma, sans-serif;
-   background: linear-gradien(135deg,  #667eea,  #764ba2);
+   font-family: "Segoe UI", Tahoma, sans-serif;
+   background: linear-gradient(135deg, #f7e8ef, #e8f1f7);
    min-height: 100vh;
    padding: 40px;
-   color:  #333;
+   color: #3a2f35;
+   line-height: 1.6;
 }
 
 /* Container utama */
@@ -23,7 +24,7 @@ body {
 /* Judul */
 .title {
     text-align: center;
-    color:  #fff;
+    color: #6c4f6b;
     margin-bottom: 30px;
     font-size: 36px;
     letter-spacing: 2px;
@@ -32,22 +33,71 @@ body {
 
 /* Card */
 .card {
-    background:  #fff;
+    background: #fff;
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px  rgba(0, 0, 0, 0.25);
+    box-shadow: 0 12px 30px rgba(108, 79, 107, 0.15);
+    border: 1px solid rgba(108, 79, 107, 0.1);
     transition:
        transform 0.4s ease,
        box-shadow 0.4s ease;
 }
 
 .card:hover {
-    transform: translateY(-8PX) scale(1.02);
-    box-shadow: 0 20px 35px  rgba(0, 0, 0, 0.25);
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(108, 79, 107, 0.2);
 }
 
 /* Heading section */
 .card h2 {
     margin-bottom: 15px;
+    color: #5c3f5b;
+    letter-spacing: 0.5px;
+}
+
+.card ul,
+.card ol {
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 6px;
+}
+
+.card strong {
+    color: #4e3a4f;
+}
+
+.nav-back {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.btn-back {
+    display: inline-block;
+    text-decoration: none;
+    color: #6c4f6b;
+    border: 2px solid #6c4f6b;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-back:hover {
+    background: #6c4f6b;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+@keyframes drop {
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
